@@ -87,7 +87,7 @@ function InputForm({
           required
           min={0}
           max={46}
-          onChange={(e) => setNonverbalRaw(e.target.value)}
+          onChange={createRangeValidator(setAge, 0, 46, 0)}
           className={classes.input}
         />
       </div>
