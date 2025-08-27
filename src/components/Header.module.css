@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap");
+
+.rubikDirtRegular {
+  font-family: "Rubik Dirt", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 4em;
+}
+
+.content {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0rem;
+
+  /* Removed min-height and background to not interfere with child components */
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+  background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+  box-shadow: 0 4px 20px rgba(15, 32, 39, 0.4);
+  color: #fff;
+}
+
+.logo {
+  background-color: #fff;
+  padding: 10px;
+  position: absolute;
+  right: 20px;
+  top: 50px;
+}
+
+.description {
+  font-size: 1.2em;
+  margin: 0 auto;
+  text-align: center;
+  width: 75%;
+}

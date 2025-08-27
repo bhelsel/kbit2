@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+
+import "./App.css";
+import Header from "./components/Header";
+import InputForm from "./components/InputForm";
+import ResultsOutput from "./components/ResultsOutput";
 
 function App() {
+  const [age, setAge] = useState(0);
+  const [verbalTotal, setVerbalTotal] = useState(0);
+  const [nonverbalRaw, setNonverbalRaw] = useState(0);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <div className="container">
+        <InputForm
+          age={age}
+          setAge={setAge}
+          verbalTotal={verbalTotal}
+          setVerbalTotal={setVerbalTotal}
+          nonverbalRaw={nonverbalRaw}
+          setNonverbalRaw={setNonverbalRaw}
+        />
+        <ResultsOutput
+          age={age}
+          nonverbalRaw={nonverbalRaw}
+          verbalTotal={verbalTotal}
+        />
+      </div>
     </div>
   );
 }

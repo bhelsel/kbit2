@@ -1,0 +1,36 @@
+.content {
+  background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+  box-shadow: 0 4px 20px rgba(15, 32, 39, 0.4);
+  color: #fff;
+  width: 25%;
+  text-align: center;
+  height: 45vh;
+  margin-left: 25px;
+}
+
+.sidePanelTitle {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+.construct {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.label {
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.input {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20%;
+  margin-right: 25px;
+  text-align: center;
+}
