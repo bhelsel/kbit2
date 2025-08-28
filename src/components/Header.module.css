@@ -29,7 +29,7 @@
   background-color: #fff;
   padding: 10px;
   position: absolute;
-  right: 20px;
+  left: 20px;
   top: 50px;
 }
 
@@ -38,4 +38,57 @@
   margin: 0 auto;
   text-align: center;
   width: 75%;
+}
+
+@media (max-width: 1200px) {
+  .logo {
+    padding: 8px;
+    top: 35px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+    margin-bottom: 2rem;
+  }
+
+  .logo {
+    padding: 4px;
+    top: 25px;
+  }
+
+  .rubikDirtRegular {
+    margin-bottom: 10px;
+  }
+
+  .description {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .logo {
+    left: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    width: 95%;
+    margin-top: 15px;
+    margin-bottom: -15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem 0;
+  }
+  .rubikDirtRegular {
+    font-size: 3rem;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .rubikDirtRegular {
+    font-size: 2rem;
+  }
 }

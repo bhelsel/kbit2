@@ -34,3 +34,55 @@
   margin-right: 25px;
   text-align: center;
 }
+
+@media (max-width: 1200px) {
+  .sidePanelTitle {
+    font-size: 1.1rem;
+    padding-top: 5px;
+  }
+  .construct {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    flex-direction: column;
+    align-items: flex-end; /* Optional: keeps items aligned to the right */
+  }
+
+  .label {
+    padding-bottom: 5px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .sidePanelTitle {
+    font-size: 0.9rem;
+  }
+  .label {
+    font-size: 0.9rem;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .sidePanelTitle {
+    padding-top: 20px;
+  }
+  .content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+  }
+  .label {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .input {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    width: 95%;
+  }
+}

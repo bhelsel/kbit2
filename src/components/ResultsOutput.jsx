@@ -56,7 +56,7 @@ function ResultsOutput({ age, verbalTotal, nonverbalRaw }) {
         Calculated Standard and Age Equivalent Scores
       </h2>
       {showResults && (
-        <>
+        <div className={classes.textContainer}>
           <p>
             The KBIT-2 Results for a {age} year old with a verbal score of{" "}
             {verbalTotal} and a nonverbal score of {nonverbalRaw}
@@ -87,7 +87,7 @@ function ResultsOutput({ age, verbalTotal, nonverbalRaw }) {
               </p>
             </>
           )}
-        </>
+        </div>
       )}
     </div>
   );

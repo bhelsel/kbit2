@@ -5,3 +5,9 @@
   display: flex;
   justify-content: flex-start;
 }
+
+@media (max-width: 800px) {
+  .container {
+    display: block;
+  }
+}
