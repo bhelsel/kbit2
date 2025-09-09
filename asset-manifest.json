@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/kbit2/static/css/main.9f291675.css",
-    "main.js": "/kbit2/static/js/main.b1b820f8.js",
+    "main.css": "/kbit2/static/css/main.5cd8c5cc.css",
+    "main.js": "/kbit2/static/js/main.56f4c001.js",
     "static/js/453.0c7f3484.chunk.js": "/kbit2/static/js/453.0c7f3484.chunk.js",
     "index.html": "/kbit2/index.html",
-    "main.9f291675.css.map": "/kbit2/static/css/main.9f291675.css.map",
-    "main.b1b820f8.js.map": "/kbit2/static/js/main.b1b820f8.js.map",
+    "main.5cd8c5cc.css.map": "/kbit2/static/css/main.5cd8c5cc.css.map",
+    "main.56f4c001.js.map": "/kbit2/static/js/main.56f4c001.js.map",
     "453.0c7f3484.chunk.js.map": "/kbit2/static/js/453.0c7f3484.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f291675.css",
-    "static/js/main.b1b820f8.js"
+    "static/css/main.5cd8c5cc.css",
+    "static/js/main.56f4c001.js"
   ]
 }
