@@ -13,14 +13,14 @@ function InputForm({
   const [verbalRiddles, setVerbalRiddles] = useState("");
 
   useEffect(() => {
-    if ((verbalRaw > 0) & (verbalRiddles > 0)) {
+    if ((verbalRaw !== "") | (verbalRiddles !== "")) {
       setVerbalTotal(Number(verbalRaw) + Number(verbalRiddles));
     } else {
-      setVerbalTotal(0);
+      setVerbalTotal("");
     }
   }, [verbalRaw, verbalRiddles, setVerbalTotal]);
 
-  const createRangeValidator = (setter, min, max, defaultValue = 0) => {
+  const createRangeValidator = (setter, min, max, defaultValue = "") => {
     return (e) => {
       const value = Number(e.target.value);
       const currentMax = typeof max === "function" ? max() : max; // Calculate max at runtime
@@ -44,7 +44,7 @@ function InputForm({
           min={18}
           max={66}
           required
-          onChange={createRangeValidator(setAge, 18, 66, 0)}
+          onChange={createRangeValidator(setAge, 18, 66)}
           className={classes.input}
         />
       </div>
@@ -59,7 +59,6 @@ function InputForm({
             setVerbalRaw,
             0,
             () => 108 - Number(verbalRiddles),
-            0
           )}
           className={classes.input}
         />
@@ -75,7 +74,6 @@ function InputForm({
             setVerbalRiddles,
             0,
             () => 108 - Number(verbalRaw),
-            0
           )}
           className={classes.input}
         />
@@ -87,7 +85,7 @@ function InputForm({
           required
           min={0}
           max={46}
-          onChange={createRangeValidator(setNonverbalRaw, 0, 46, 0)}
+          onChange={createRangeValidator(setNonverbalRaw, 0, 46)}
           className={classes.input}
         />
       </div>

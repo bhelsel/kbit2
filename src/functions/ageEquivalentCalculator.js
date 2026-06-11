@@ -24,7 +24,6 @@ function ageEquivalentCalculator({ verbalTotal, nonverbalRaw }) {
 
   const nonverbalAE = kbit2ae.find((item) => {
     const nonverbalMatch = findMatchAE(nonverbalRaw, item.nonverbal_raw_score);
-    console.log(nonverbalMatch);
     return nonverbalMatch;
   });
 

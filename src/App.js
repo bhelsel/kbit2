@@ -6,9 +6,9 @@ import InputForm from "./components/InputForm";
 import ResultsOutput from "./components/ResultsOutput";
 
 function App() {
-  const [age, setAge] = useState(0);
-  const [verbalTotal, setVerbalTotal] = useState(0);
-  const [nonverbalRaw, setNonverbalRaw] = useState(0);
+  const [age, setAge] = useState("");
+  const [verbalTotal, setVerbalTotal] = useState("");
+  const [nonverbalRaw, setNonverbalRaw] = useState("");
   return (
     <div>
       <Header />

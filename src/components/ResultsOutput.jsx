@@ -13,7 +13,7 @@ function ResultsOutput({ age, verbalTotal, nonverbalRaw }) {
   const [ageEquivalent, setAgeEquivalent] = useState([]);
 
   useEffect(() => {
-    if (age > 0 && verbalTotal > 0 && nonverbalRaw > 0) {
+    if ((age > 0) & (verbalTotal !== "") & (nonverbalRaw !== "")) {
       setShowResults(true);
       // Verbal standard score calculation
       const verbstd = standardScoreCalculator({
@@ -31,7 +31,23 @@ function ResultsOutput({ age, verbalTotal, nonverbalRaw }) {
       setNonvbstd(nonvbstd);
       setTotalStandardScore(verbstd.standardScore + nonvbstd.standardScore);
       setAgeEquivalent(ageEquivalentCalculator({ verbalTotal, nonverbalRaw }));
+      console.log(
+        "Age:",
+        age,
+        "Verbal Score:",
+        verbalTotal,
+        "Nonverbal Score:",
+        nonverbalRaw,
+      );
     } else {
+      console.log(
+        "Age:",
+        age,
+        "Verbal Score:",
+        verbalTotal,
+        "Nonverbal Score:",
+        nonverbalRaw,
+      );
       setShowResults(false);
     }
   }, [
