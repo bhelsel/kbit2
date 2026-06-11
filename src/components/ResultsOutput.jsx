@@ -31,23 +31,7 @@ function ResultsOutput({ age, verbalTotal, nonverbalRaw }) {
       setNonvbstd(nonvbstd);
       setTotalStandardScore(verbstd.standardScore + nonvbstd.standardScore);
       setAgeEquivalent(ageEquivalentCalculator({ verbalTotal, nonverbalRaw }));
-      console.log(
-        "Age:",
-        age,
-        "Verbal Score:",
-        verbalTotal,
-        "Nonverbal Score:",
-        nonverbalRaw,
-      );
     } else {
-      console.log(
-        "Age:",
-        age,
-        "Verbal Score:",
-        verbalTotal,
-        "Nonverbal Score:",
-        nonverbalRaw,
-      );
       setShowResults(false);
     }
   }, [
